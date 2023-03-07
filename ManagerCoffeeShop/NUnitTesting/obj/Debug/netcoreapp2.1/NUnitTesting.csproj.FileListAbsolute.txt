@@ -1,0 +1,5 @@
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\obj\Debug\netcoreapp2.1\NUnitTesting.csproj.AssemblyReference.cache
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\obj\Debug\netcoreapp2.1\NUnitTesting.GeneratedMSBuildEditorConfig.editorconfig
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\obj\Debug\netcoreapp2.1\NUnitTesting.AssemblyInfoInputs.cache
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\obj\Debug\netcoreapp2.1\NUnitTesting.AssemblyInfo.cs
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\obj\Debug\netcoreapp2.1\NUnitTesting.csproj.CoreCompileInputs.cache
