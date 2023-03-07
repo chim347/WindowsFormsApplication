@@ -4,21 +4,6 @@
     "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\NUnitTesting\\NUnitTesting.csproj": {}
   },
   "projects": {
-    "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj": {
-      "restore": {
-        "projectUniqueName": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj",
-        "projectName": "ManagerCoffeeShop",
-        "projectPath": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
     "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\NUnitTesting\\NUnitTesting.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -46,11 +31,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj": {
-                "projectPath": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

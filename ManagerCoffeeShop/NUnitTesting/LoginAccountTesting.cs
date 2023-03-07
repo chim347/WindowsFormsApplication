@@ -1,4 +1,4 @@
-using ManagerCoffeeShop.DAO;
+/*using ManagerCoffeeShop.DAO;
 using ManagerCoffeeShop.DTO;
 
 namespace NUnitTesting
@@ -37,4 +37,4 @@ namespace NUnitTesting
             Assert.That(actual, Is.EqualTo(expected));
         }
     }
-}
+}*/

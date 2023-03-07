@@ -1109,15 +1109,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
-      },
-      "ManagerCoffeeShop/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/ManagerCoffeeShop.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ManagerCoffeeShop.dll": {}
-        }
       }
     }
   },
@@ -4388,16 +4379,10 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "ManagerCoffeeShop/1.0.0": {
-      "type": "project",
-      "path": "../ManagerCoffeeShop/ManagerCoffeeShop.csproj",
-      "msbuildProject": "../ManagerCoffeeShop/ManagerCoffeeShop.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ManagerCoffeeShop >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
@@ -4437,11 +4422,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj": {
-              "projectPath": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

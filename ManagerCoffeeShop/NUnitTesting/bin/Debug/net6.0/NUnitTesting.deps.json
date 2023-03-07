@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "NUnitTesting/1.0.0": {
         "dependencies": {
-          "ManagerCoffeeShop": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.3.2",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.3.0",
@@ -727,11 +726,6 @@
           "System.Threading": "4.0.11",
           "System.Xml.ReaderWriter": "4.0.11"
         }
-      },
-      "ManagerCoffeeShop/1.0.0": {
-        "runtime": {
-          "ManagerCoffeeShop.exe": {}
-        }
       }
     }
   },
@@ -1125,11 +1119,6 @@
       "sha512": "sha512-Mk2mKmPi0nWaoiYeotq1dgeNK1fqWh61+EK+w4Wu8SWuTYLzpUnschb59bJtGywaPq7SmTuPf44wrXRwbIrukg==",
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
-    },
-    "ManagerCoffeeShop/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

@@ -86,9 +86,6 @@ D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTest
 D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\bin\Debug\net6.0\ManagerCoffeeShop.exe
-D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\bin\Debug\net6.0\ManagerCoffeeShop.pdb
-D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\bin\Debug\net6.0\ManagerCoffeeShop.exe.config
 D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\obj\Debug\net6.0\NUnitTesting.csproj.AssemblyReference.cache
 D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\obj\Debug\net6.0\NUnitTesting.GeneratedMSBuildEditorConfig.editorconfig
 D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\NUnitTesting\obj\Debug\net6.0\NUnitTesting.AssemblyInfoInputs.cache

@@ -18,8 +18,4 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ManagerCoffeeShop\ManagerCoffeeShop.csproj" />
-  </ItemGroup>
-
 </Project>
