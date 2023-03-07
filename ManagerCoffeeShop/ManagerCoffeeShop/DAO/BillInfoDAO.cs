@@ -32,5 +32,11 @@ namespace ManagerCoffeeShop.DAO
 
             return listBillInfo;
         }
+
+        public void InserBillInfo(int idBill, int idFood, int count)
+        {
+            DataProvider.Instance.ExcuteQuery("USP_InsertBillInfo @idBill, @idFood, @count", new object[] { idBill, idFood, count});
+            
+        }
     }
 }

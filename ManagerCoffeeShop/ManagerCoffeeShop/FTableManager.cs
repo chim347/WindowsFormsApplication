@@ -5,8 +5,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,9 +21,25 @@ namespace ManagerCoffeeShop
         {
             InitializeComponent();
             LoadTable();
+            LoadCategory();
         }
 
         #region Method
+
+        void LoadCategory()
+        {
+            List<Category> listCategory = CategoryDAO.Instance.GetListCategory();
+            cbCategory.DataSource = listCategory;
+            cbCategory.DisplayMember = "Name";
+
+        }
+
+        void LoadFoodListCategoryById(int id)
+        {
+            List<Food> listFood = FoodDAO.Instance.GetFoodByIdCategory(id);
+            cbFood.DataSource = listFood;
+            cbFood.DisplayMember = "Name";
+        }
         void LoadTable()
         {
             List<Table> tableList = TableDAO.Instance.LoadTableList();
@@ -45,17 +64,25 @@ namespace ManagerCoffeeShop
         {
             lstBill.Items.Clear();
             List<ManagerCoffeeShop.DTO.Menu> listBillInfo = MenuDAO.Instance.GetListMenuByTable(id);
+            float totalPrice = 0;
             foreach (ManagerCoffeeShop.DTO.Menu item in listBillInfo) {
                 ListViewItem lsvItem = new ListViewItem(item.FoodName.ToString());
                 lsvItem.SubItems.Add(item.Count.ToString());
                 lsvItem.SubItems.Add(item.Price.ToString());
                 lsvItem.SubItems.Add(item.TotalPrice.ToString());
+                totalPrice += item.TotalPrice;
 
                 lstBill.Items.Add(lsvItem);
                 
             }
+            CultureInfo culture = new CultureInfo("vi-VN");
+
+            //Thread.CurrentThread.CurrentCulture = culture;
+
+            txbTotalPrice.Text = totalPrice.ToString("c", culture);
         }
         #endregion
+
 
 
 
@@ -63,6 +90,7 @@ namespace ManagerCoffeeShop
         private void lstBill_Click(object sender, EventArgs e)
         {
             int tableId = ((sender as Button).Tag as Table).Id;
+            lstBill.Tag = (sender as Button).Tag;
             showBill(tableId);
         }
 
@@ -88,6 +116,33 @@ namespace ManagerCoffeeShop
             this.Close();
         }
 
+        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int id = 0;
+            ComboBox cb = sender as ComboBox;
+
+            if (cb.SelectedItem == null)
+                return;
+
+            Category selected = cb.SelectedItem as Category;
+            id = selected.Id;
+
+            LoadFoodListCategoryById(id);
+        }
+
+        private void btAddFood_Click(object sender, EventArgs e)
+        {
+            Table table = lstBill.Tag as Table;
+
+            int idBill = BillDAO.Instance.GetUncheckBillIdByTableID(table.Id);
+
+            if(idBill == -1) {
+                BillDAO.Instance.InsertBill(table.Id);
+                BillInfoDAO.Instance.InserBillInfo(idBill, table.Id, 1);
+            }
+        }
+
         #endregion
+
     }
 }

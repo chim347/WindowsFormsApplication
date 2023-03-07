@@ -5,6 +5,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Principal;
+using ManagerCoffeeShop.DTO;
 
 namespace ManagerCoffeeShop.DAO
 {

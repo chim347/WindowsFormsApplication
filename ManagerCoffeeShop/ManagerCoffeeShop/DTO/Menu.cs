@@ -19,7 +19,7 @@ namespace ManagerCoffeeShop.DTO
         public Menu() { }
         public Menu(DataRow row)
         {
-            this.FoodName = (string)row["name"].ToString();
+            this.FoodName = row["name"].ToString();
             this.Count = (int)row["count"];
             this.Price = (float)Convert.ToDouble(row["price"].ToString());
             this.TotalPrice = (float)Convert.ToDouble(row["totalPrice"].ToString());

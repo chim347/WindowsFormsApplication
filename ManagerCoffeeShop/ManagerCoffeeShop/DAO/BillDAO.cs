@@ -34,5 +34,21 @@ namespace ManagerCoffeeShop.DAO
             }
             return -1;
         }
+
+        public void InsertBill(int id)
+        {
+            DataProvider.Instance.ExcuteQuery("exec USP_InsertBill @idTable", new object[] { id });
+        }
+
+        public int GetMaxIdBill()
+        {
+            try {
+                return (int)DataProvider.Instance.ExcuteScalar("");
+            }
+            catch {
+                return 1;
+            }
+            
+        }
     }
 }

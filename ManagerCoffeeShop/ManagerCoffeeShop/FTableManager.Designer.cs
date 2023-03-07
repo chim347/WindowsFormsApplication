@@ -39,6 +39,7 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txbTotalPrice = new System.Windows.Forms.TextBox();
             this.cbSwitchTable = new System.Windows.Forms.ComboBox();
             this.btSwitchTable = new System.Windows.Forms.Button();
             this.numDiscount = new System.Windows.Forms.NumericUpDown();
@@ -50,7 +51,6 @@
             this.cbFood = new System.Windows.Forms.ComboBox();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.floPanelTable = new System.Windows.Forms.FlowLayoutPanel();
-            this.txbTotalPrice = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -67,7 +67,7 @@
             this.accountInformationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(985, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(985, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -158,13 +158,25 @@
             this.panel3.Size = new System.Drawing.Size(479, 81);
             this.panel3.TabIndex = 3;
             // 
+            // txbTotalPrice
+            // 
+            this.txbTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTotalPrice.ForeColor = System.Drawing.Color.Black;
+            this.txbTotalPrice.Location = new System.Drawing.Point(247, 3);
+            this.txbTotalPrice.Name = "txbTotalPrice";
+            this.txbTotalPrice.ReadOnly = true;
+            this.txbTotalPrice.Size = new System.Drawing.Size(217, 27);
+            this.txbTotalPrice.TabIndex = 8;
+            this.txbTotalPrice.Text = "0";
+            this.txbTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // cbSwitchTable
             // 
             this.cbSwitchTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSwitchTable.FormattingEnabled = true;
             this.cbSwitchTable.Location = new System.Drawing.Point(3, 50);
             this.cbSwitchTable.Name = "cbSwitchTable";
-            this.cbSwitchTable.Size = new System.Drawing.Size(111, 28);
+            this.cbSwitchTable.Size = new System.Drawing.Size(118, 28);
             this.cbSwitchTable.TabIndex = 7;
             // 
             // btSwitchTable
@@ -173,7 +185,7 @@
             this.btSwitchTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSwitchTable.Location = new System.Drawing.Point(3, 3);
             this.btSwitchTable.Name = "btSwitchTable";
-            this.btSwitchTable.Size = new System.Drawing.Size(111, 45);
+            this.btSwitchTable.Size = new System.Drawing.Size(118, 45);
             this.btSwitchTable.TabIndex = 6;
             this.btSwitchTable.Text = "ChangeTable";
             this.btSwitchTable.UseVisualStyleBackColor = false;
@@ -181,7 +193,7 @@
             // numDiscount
             // 
             this.numDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numDiscount.Location = new System.Drawing.Point(120, 50);
+            this.numDiscount.Location = new System.Drawing.Point(127, 50);
             this.numDiscount.Minimum = new decimal(new int[] {
             100,
             0,
@@ -196,7 +208,7 @@
             // 
             this.btDiscount.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDiscount.Location = new System.Drawing.Point(120, 3);
+            this.btDiscount.Location = new System.Drawing.Point(127, 3);
             this.btDiscount.Name = "btDiscount";
             this.btDiscount.Size = new System.Drawing.Size(106, 45);
             this.btDiscount.TabIndex = 4;
@@ -207,9 +219,9 @@
             // 
             this.btCheckout.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btCheckout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCheckout.Location = new System.Drawing.Point(351, 3);
+            this.btCheckout.Location = new System.Drawing.Point(283, 36);
             this.btCheckout.Name = "btCheckout";
-            this.btCheckout.Size = new System.Drawing.Size(125, 72);
+            this.btCheckout.Size = new System.Drawing.Size(150, 40);
             this.btCheckout.TabIndex = 3;
             this.btCheckout.Text = "Payment";
             this.btCheckout.UseVisualStyleBackColor = false;
@@ -254,24 +266,26 @@
             this.btAddFood.TabIndex = 2;
             this.btAddFood.Text = "Add Food ";
             this.btAddFood.UseVisualStyleBackColor = false;
+            this.btAddFood.Click += new System.EventHandler(this.btAddFood_Click);
             // 
             // cbFood
             // 
-            this.cbFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbFood.FormattingEnabled = true;
             this.cbFood.Location = new System.Drawing.Point(3, 47);
             this.cbFood.Name = "cbFood";
-            this.cbFood.Size = new System.Drawing.Size(274, 28);
+            this.cbFood.Size = new System.Drawing.Size(274, 26);
             this.cbFood.TabIndex = 1;
             // 
             // cbCategory
             // 
-            this.cbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Location = new System.Drawing.Point(3, 3);
             this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(274, 28);
+            this.cbCategory.Size = new System.Drawing.Size(274, 26);
             this.cbCategory.TabIndex = 0;
+            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
             // floPanelTable
             // 
@@ -280,15 +294,6 @@
             this.floPanelTable.Name = "floPanelTable";
             this.floPanelTable.Size = new System.Drawing.Size(477, 601);
             this.floPanelTable.TabIndex = 5;
-            // 
-            // txbTotalPrice
-            // 
-            this.txbTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTotalPrice.ForeColor = System.Drawing.Color.Red;
-            this.txbTotalPrice.Location = new System.Drawing.Point(232, 15);
-            this.txbTotalPrice.Name = "txbTotalPrice";
-            this.txbTotalPrice.Size = new System.Drawing.Size(113, 27);
-            this.txbTotalPrice.TabIndex = 8;
             // 
             // FTableManager
             // 
