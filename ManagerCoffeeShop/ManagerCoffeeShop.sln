@@ -5,9 +5,7 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerCoffeeShop", "ManagerCoffeeShop\ManagerCoffeeShop.csproj", "{BAAC598E-67BD-470E-BDF9-BAA1F1C95F5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTesting", "NUnitTesting\NUnitTesting.csproj", "{313FC384-3B34-4E92-A374-5D8ABE60C8CC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTesting", "MSTesting\MSTesting.csproj", "{04020E20-F9B8-4522-A6A9-0C5DBFBCF134}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTesting", "NUnitTesting\NUnitTesting.csproj", "{313FC384-3B34-4E92-A374-5D8ABE60C8CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{313FC384-3B34-4E92-A374-5D8ABE60C8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{313FC384-3B34-4E92-A374-5D8ABE60C8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{313FC384-3B34-4E92-A374-5D8ABE60C8CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{04020E20-F9B8-4522-A6A9-0C5DBFBCF134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04020E20-F9B8-4522-A6A9-0C5DBFBCF134}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04020E20-F9B8-4522-A6A9-0C5DBFBCF134}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04020E20-F9B8-4522-A6A9-0C5DBFBCF134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

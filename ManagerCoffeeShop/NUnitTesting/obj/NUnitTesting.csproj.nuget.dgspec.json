@@ -4,6 +4,33 @@
     "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\NUnitTesting\\NUnitTesting.csproj": {}
   },
   "projects": {
+    "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj",
+        "projectName": "ManagerCoffeeShop",
+        "projectPath": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "projectStyle": "PackagesConfig",
+        "configFilePaths": [
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "packagesConfigPath": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\packages.config"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\NUnitTesting\\NUnitTesting.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +58,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj": {
+                "projectPath": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,6 +75,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.3.2, )"

@@ -4,21 +4,6 @@
     "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\MSTesting\\MSTesting.csproj": {}
   },
   "projects": {
-    "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj": {
-      "restore": {
-        "projectUniqueName": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj",
-        "projectName": "ManagerCoffeeShop",
-        "projectPath": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
     "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\MSTesting\\MSTesting.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -46,11 +31,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj": {
-                "projectPath": "D:\\Download\\semester5\\PRN211\\WindowsFormsApplication\\ManagerCoffeeShop\\ManagerCoffeeShop\\ManagerCoffeeShop.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -70,6 +51,10 @@
             "MSTest.TestFramework": {
               "target": "Package",
               "version": "[2.2.8, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",

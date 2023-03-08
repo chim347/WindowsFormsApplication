@@ -218,4 +218,30 @@ select * from dbo.BillInfo where idBill = 4
 select * from dbo.Bill where idTable = 2 and status = 1
 
 select f.name, bi.count, f.price, f.price*bi.count as totalPrice from dbo.BillInfo as bi, dbo.Bill as b, dbo.Food as f 
-where bi.idBill = b.id and bi.idFood = f.id and b.idTable = 2
+where bi.idBill = b.id and bi.idFood = f.id and b.status = 0 and b.idTable = 15
+
+select * from dbo.BillInfo
+select * from dbo.Bill
+select * from dbo.TableFood
+
+Create proc USP_InsertBill
+@idTable INT
+AS
+BEGIN
+	insert dbo.Bill
+		(DateCheckIn, DateCheckOut, idTable, status)
+	values (Getdate(), null, @idTable, 0)
+END
+GO
+
+Create proc USP_InsertBillInfo
+@idBill INT, @idFood INT, @count INT
+AS
+BEGIN
+	insert dbo.BillInfo
+		(idBill, idFood, count)
+	values (@idBill, @idFood, @count)
+END
+GO
+
+select * from dbo.Account

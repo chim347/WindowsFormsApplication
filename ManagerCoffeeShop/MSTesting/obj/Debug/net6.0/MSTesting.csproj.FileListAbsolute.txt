@@ -105,3 +105,14 @@ D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting
 D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
 D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\System.Text.Json.dll
+D:\Download\semester5\PRN211\WindowsFormsApplication\ManagerCoffeeShop\MSTesting\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
